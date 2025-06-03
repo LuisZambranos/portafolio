@@ -312,6 +312,19 @@ main{
     }       
 }
 
+.margin-sides-mobile {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+@media screen and (min-width: 720px) {
+  .margin-sides-mobile {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
 .project__tags{
     display: flex;
     justify-content: space-between;
