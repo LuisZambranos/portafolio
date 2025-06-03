@@ -1,0 +1,18 @@
+{
+    "profile": {
+        "rol": "Desarrollador Front-End",
+        "description": "Soy una persona comprometida, comunicativa y con muchas ganas de crecer. Me apasiona el desarrollo web, aprender nuevas tecnologías y aplicarlas en proyectos reales. Disfruto trabajar en equipo, compartir ideas y crear soluciones que mezclen diseño, funcionalidad y experiencia de usuario. \n Aprendo rápido, me adapto con facilidad y siempre busco formas de mejorar y aportar valor en cada proyecto. Estoy en constante búsqueda de oportunidades para seguir creciendo, aprender más y dejar mi huella en cada línea de código."
+    },
+    "experience": {
+        "Experience": "Experiencia",
+        "first-job-title": "Soporte TI",
+        "first-job-dates": "Nov 2020 - Octubre 2022",
+        "first-job-description": "Verificar estado de red.\nConección de hardware.\nActualización de software.nFormateo de equipos.",
+        "second-job-title": "Desarrollador Front-End",
+        "second-job-dates": "Dic 2024 - Presente",
+        "second-job-description": "Aca trabaje en un proyecto de desarrollo web. Trabaje en equipo para resolver problemas y mejorar la calidad del código."
+    },
+    "hobbies": {
+        "description": "Uno de mis pasatiempos favoritos es jugar videojuegos. Me gusta la alta calidad y diseño que ofrecen, la diversidad de temas y estilos. Me encanta explorar nuevos juegos y desarrollar nuevas ideas para aumentar la creatividad."
+    }
+}
