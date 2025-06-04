@@ -423,9 +423,11 @@ main{
 }
 
 .icon-up {
-    width: 24px;
-    height: 24px;
-    display: block;
+  width: 24px;
+  height: 24px;
+  display: block;
+  stroke: currentColor;
+ /*AÑADE ESTO */
 }
 
 /* Animación subir */
