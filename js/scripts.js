@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (scrollTop > 150) {
         scrollButton.classList.add("show");
+
+        scrollButton.style.color = getComputedStyle(scrollButton).getPropertyValue("color");
       } else {
         scrollButton.classList.remove("show");
       }
