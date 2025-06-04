@@ -427,7 +427,7 @@ main{
   height: 24px;
   display: block;
   stroke: currentColor;
- /*AÑADE ESTO */
+  fill: currentColor; /*AÑADE ESTO */
 }
 
 /* Animación subir */
