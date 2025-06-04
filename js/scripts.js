@@ -43,22 +43,20 @@ toggleColors.addEventListener('click', (e) => {
 document.addEventListener("DOMContentLoaded", () => {
   const scrollButton = document.querySelector(".custom-scroll-top");
 
-  // Ocultar el botón inicialmente
   if (scrollButton) {
-    scrollButton.style.display = "none";
-
-    // Mostrar u ocultar según el scroll
-    window.addEventListener("scroll", () => {
+    const toggleScrollButton = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-      if (scrollTop > 250) {
-        scrollButton.style.display = "block";
+      if (scrollTop > 150) {
+        scrollButton.classList.add("show");
       } else {
-        scrollButton.style.display = "none";
+        scrollButton.classList.remove("show");
       }
-    });
+    };
 
-    // Scroll suave al hacer clic
+    window.addEventListener("scroll", toggleScrollButton);
+    toggleScrollButton(); // Ejecutar al cargar por si ya está abajo
+
     scrollButton.addEventListener("click", () => {
       window.scrollTo({
         top: 0,
@@ -67,4 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 

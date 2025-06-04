@@ -383,45 +383,69 @@ main{
 }
 
 .custom-scroll-top {
-  position: fixed;
-  bottom: 1.5em;
-  right: 1.5em;
-  background-color: var(--primary-color);
-  color: var(--bg-color);
-  border: none;
-  padding: 0.8em;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 1000;
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.8em;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 500;
 
-  /* Añade la animación de subir */
-  animation: subir 1s infinite alternate;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.2s ease;
+
+    animation: subir 1s infinite alternate;
 }
 
+/* Mostrar con fade */
+.custom-scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Hover: detiene animación de "subir" y escala */
 .custom-scroll-top:hover {
-  /*  Aquí usamos scale dentro de transform, pero la animación también lo usa */
-  /* Para que no se anulen, debes suspender la animación al hacer hover */
-  animation: none;
-  transform: scale(1.1);
-  background-color: var(--text-color);
-  color: var(--bg-card-color);
+    animation: none;
+    transform: scale(1.1);
+    background-color: var(--text-color);
+    color: var(--bg-card-color);
 }
 
 .icon-up {
-  width: 24px;
-  height: 24px;
-  display: block;
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
+/* Animación subir */
 @keyframes subir {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@keyframes subir {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
 }
 
 @keyframes skills-bar-fill{
