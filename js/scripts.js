@@ -38,3 +38,33 @@ toggleTheme.addEventListener("click", () => {
 toggleColors.addEventListener('click', (e) => {
   rootStyles.setProperty("--primary-color", e.target.dataset.color);
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollButton = document.querySelector(".custom-scroll-top");
+
+  // Ocultar el botón inicialmente
+  if (scrollButton) {
+    scrollButton.style.display = "none";
+
+    // Mostrar u ocultar según el scroll
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (scrollTop > 250) {
+        scrollButton.style.display = "block";
+      } else {
+        scrollButton.style.display = "none";
+      }
+    });
+
+    // Scroll suave al hacer clic
+    scrollButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+});
+

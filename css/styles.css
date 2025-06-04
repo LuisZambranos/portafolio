@@ -312,18 +312,6 @@ main{
     }       
 }
 
-.margin-sides-mobile {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-@media screen and (min-width: 720px) {
-  .margin-sides-mobile {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 
 .project__tags{
     display: flex;
@@ -388,12 +376,53 @@ main{
 }
 
 .img-small {
-  width: 100%;        /* o el porcentaje que desees */
-  max-width: 270px;  /* puedes ajustar esto también */
-  display: block;
-  border-radius: var(--border-radius); /* opcional: para que se vea uniforme */
+    width: 100%;        /* o el porcentaje que desees */
+    max-width: 270px;  /* puedes ajustar esto también */
+    display: block;
+    border-radius: var(--border-radius); /* opcional: para que se vea uniforme */
 }
 
+.custom-scroll-top {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.8em;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+
+  /* Añade la animación de subir */
+  animation: subir 1s infinite alternate;
+}
+
+.custom-scroll-top:hover {
+  /*  Aquí usamos scale dentro de transform, pero la animación también lo usa */
+  /* Para que no se anulen, debes suspender la animación al hacer hover */
+  animation: none;
+  transform: scale(1.1);
+  background-color: var(--text-color);
+  color: var(--bg-card-color);
+}
+
+.icon-up {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
 
 @keyframes skills-bar-fill{
     to{
