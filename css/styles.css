@@ -422,6 +422,15 @@ main{
     color: var(--bg-card-color);
 }
 
+
+/*Lo agrego para que el boton volviera al color*/
+.custom-scroll-top:focus {
+    animation: none;
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    color: var(--bg-card-color);
+}
+
 .icon-up {
   width: 24px;
   height: 24px;
