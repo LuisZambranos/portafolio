@@ -126,11 +126,7 @@ main{
     display: grid;
     padding: 2em;
     gap: 0.5em;
-
-    max-width: 720px;        /* ✅ Esto controla el ancho en móviles grandes y medianos */
-    margin: 0 auto;          /* ✅ Esto centra el contenido horizontalmente */
-    width: 100%;             /* ✅ Hace que en pantallas pequeñas se adapte */
-    box-sizing: border-box;  /* ✅ Previene que el padding rompa el ancho */
+    
 }
 
 @media screen and (min-width: 720px){
@@ -466,11 +462,4 @@ main{
     to{
         transform: translateX(var(--skills-bar-legth));
     }
-}
-
-@media screen and (max-width: 719px) {
-  .card {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
 }
