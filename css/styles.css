@@ -467,3 +467,10 @@ main{
         transform: translateX(var(--skills-bar-legth));
     }
 }
+
+@media screen and (max-width: 719px) {
+  .card {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
