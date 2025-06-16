@@ -319,12 +319,12 @@ main{
     justify-content: space-between;
     margin: 0.5em 0;
     font-size: 0.6rem;
-    width: 275px;
+    width: 300px;
 }
 
 @media screen  and (min-width: 760px){
     .project__tags{
-        width: 325px;
+        width: 450px;
         font-size: 0.8rem;
     }
 }
