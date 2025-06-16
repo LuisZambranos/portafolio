@@ -319,7 +319,7 @@ main{
     justify-content: space-between;
     margin: 0.5em 0;
     font-size: 0.6rem;
-    width: 300px;
+    width: 325px;
 }
 
 @media screen  and (min-width: 760px){
