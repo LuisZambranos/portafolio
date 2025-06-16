@@ -324,7 +324,7 @@ main{
 
 @media screen  and (min-width: 760px){
     .project__tags{
-        width: 450px;
+        width: 480px;
         font-size: 0.8rem;
     }
 }
