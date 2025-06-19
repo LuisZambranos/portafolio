@@ -26,14 +26,24 @@ flagsElement.addEventListener('click', (e) => {
 
 toggleTheme.addEventListener("click", () => {
   document.body.classList.toggle('dark');
-  if (toggleIcon.src.includes('moon.svg')) {
-    toggleIcon.src = 'assets/icons/sun.svg';
-    toggleText.textContent = 'Light Mode';
+
+  const isDark = document.body.classList.contains('dark');
+
+  // Cambia el ícono
+  toggleIcon.src = isDark ? 'assets/icons/moon.svg' : 'assets/icons/sun.svg';
+
+  // Cambia el data-value y deja que el cambio de idioma lo maneje automáticamente
+  toggleText.setAttribute('data-value', isDark ? 'dark' : 'light');
+
+  // Llama a changeLanguage de nuevo si ya hay un idioma cargado
+  const currentLang = document.querySelector('.flags__item[data-language].active')?.dataset.language;
+  if (currentLang) {
+    changeLanguage(currentLang);
   } else {
-    toggleIcon.src = 'assets/icons/moon.svg';
-    toggleText.textContent = 'Dark Mode';
+    changeLanguage('es'); // por defecto, por si no hay una activa
   }
 });
+
 
 toggleColors.addEventListener('click', (e) => {
   rootStyles.setProperty("--primary-color", e.target.dataset.color);

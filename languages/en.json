@@ -1,4 +1,8 @@
 {
+    "mode": {
+        "dark": "Dark mode",
+        "light": "Light mode"
+    },
     "profile": {
         "rol": "Front-End Developer",
         "description": "I am a committed, communicative person eager to grow. I am passionate about web development, learning new technologies, and applying them to real-world projects. I enjoy working in teams, sharing ideas, and creating solutions that combine design, functionality, and user experience.\n I learn quickly, adapt easily, and always look for ways to improve and add value to each project. I am constantly looking for opportunities to continue growing, learn more, and leave my mark on every line of code."

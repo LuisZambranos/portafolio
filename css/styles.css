@@ -77,11 +77,11 @@ switches{
 
 .flags__item{
     width: 30px;
+    cursor: pointer;
 }
 
 .flags__img{
     display: block;
-    cursor: pointer;
 }
 
 .colors{
@@ -405,15 +405,6 @@ main{
   width: 100%;
   border-radius: var(--border-radius);
 }
-
-
-/*
-.img-medium {
-    width: 100%;        
-    max-width: 500px;  
-    display: block;
-    border-radius: var(--border-radius);
-}*/
 
 .custom-scroll-top {
     position: fixed;

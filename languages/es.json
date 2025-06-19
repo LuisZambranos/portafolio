@@ -1,4 +1,8 @@
 {
+    "mode": {
+        "dark": "Modo oscuro",
+        "light": "Modo claro"
+    },
     "profile": {
         "rol": "Desarrollador Front-End",
         "description": "Soy una persona comprometida, comunicativa y con muchas ganas de crecer. Me apasiona el desarrollo web, aprender nuevas tecnologías y aplicarlas en proyectos reales. Disfruto trabajar en equipo, compartir ideas y crear soluciones que mezclen diseño, funcionalidad y experiencia de usuario. \n Aprendo rápido, me adapto con facilidad y siempre busco formas de mejorar y aportar valor en cada proyecto. Estoy en constante búsqueda de oportunidades para seguir creciendo, aprender más y dejar mi huella en cada línea de código."
