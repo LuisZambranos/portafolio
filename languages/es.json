@@ -13,6 +13,16 @@
         "second-job-description": "Aca trabaje en un proyecto de desarrollo web. Trabaje en equipo para resolver problemas y mejorar la calidad del código."
     },
     "hobbies": {
+        "title": "Juegos de vídeo",
         "description": "Uno de mis pasatiempos favoritos es jugar videojuegos. Me gusta la alta calidad y diseño que ofrecen, la diversidad de temas y estilos. Me encanta explorar nuevos juegos y desarrollar nuevas ideas para aumentar la creatividad."
+    },
+    "project": {
+        "ecommerce-description-short": "Ecommerce para kripton, página de venta de ropa.",
+        "ecommerce-description-long": "Realicé una página web. Kripton solicitó un ecommerce con login y verificación de cuentas para permitir acceso a la página de compras. Para este proyecto utilicé MySQL y PHP para hacer las consultas y además las contraseñas fueran encriptadas.",
+        "portfolio-title": "Portafolio",
+        "portfolio-description-short": "Este es mi portafolio personal.",
+        "portfolio-description-long": "Realicé una página web sobre mí. Esta página la hice con el fin de mostrar mis habilidades como desarrollador y que las personas vieran los proyectos en los que estoy trabajando actualmente.",
+        "app-description-short": "Próximamente...",
+        "app-description-long": "Estoy diseñando una app móvil en Android Studio cuyo fin es entregar dietas, rutinas, calcular IMC, entre otras funciones."
     }
 }

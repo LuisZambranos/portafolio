@@ -40,7 +40,11 @@
               </div>
               <div class="card__header">
                 <h2 class="card__title no-margin">Luis Zambrano</h2>
-                <p class="card__subtitle" data-section="profile" data-value="rol">Desarrollador Front-End</p>
+                <p 
+                  class="card__subtitle" 
+                  data-section="profile" 
+                  data-value="rol">Desarrollador Front-End
+                </p>
               </div>
               <div class="card__body">
                 <div class="card__link">
@@ -149,14 +153,20 @@
             </article>
             <article class="card card--hobbies">
               <h2 class="card__title">Hobbies</h2>
-              <div class="card__image-container">
+              <div class="card__image-container-small">
                 <img 
                   src="assets/images/videojuego.jpeg" 
                   alt="Videojuego" 
                   class="card__image img-small" 
                 />
               </div>
-              <h3 class="hobbie__title">Videojuegos</h3>
+              <h3 
+                class="hobbie__title"
+                data-section="hobbies"
+                data-value="title"
+              >
+                Juegos de vídeo
+              </h3>
               <p 
                 class="card__text"
                 data-section="hobbies"
@@ -250,10 +260,20 @@
                   <span class="project__tag">#Responsive</span>
                 </div>
                 <h2 class="card__title">Kripton</h2>
-                <p class="card__text">Ecommerce para kripton, 
+                <p 
+                  class="card__text"
+                  data-section="project"
+                  data-value="ecommerce-description-short"
+                >
+                  Ecommerce para kripton, 
                   página de venta de ropa.
                 </p>
-                <p class="card__text">Realice una pagina web, kripton solicito un 
+                <p 
+                  class="card__text"
+                  data-section="project"
+                  data-value="ecommerce-description-long"
+                >
+                  Realice una pagina web, kripton solicito un 
                   ecommerce con login y verificacion de cuentas para permitir acceso 
                   a la pagina de compras. Para esta proyecto utilice MySQL y PHP para 
                   hacer las consultas y que ademas las contraseñas fueran encriptadas.
@@ -262,6 +282,54 @@
                   <a href="https://luiszambranos.github.io/ecommerce-Kripton/pages/compras.html" target="_blank" 
                   class="button button--primary">Demo</a>
                   <a href="https://github.com/LuisZambranos/ecommerce-Kripton" target="_blank"
+                  class="button button--ghost">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--project">
+              <div class="card__image-container">
+                <img 
+                  src="assets/images/portafolio.png" 
+                  alt="project" 
+                  class="card__image"
+                />
+              </div>
+              <div class="project">
+                <div class="project__tags">
+                  <span class="project__tag">#HTML</span>
+                  <span class="project__tag">#CSS</span>
+                  <span class="project__tag">#JavaScript</span>
+                  <span class="project__tag">#Responsive</span>
+                  <span class="project__tag">#Json</span>
+                </div>
+                <h2 
+                  class="card__title" 
+                  data-section="project"
+                  data-value="portfolio-title"
+                >
+                  Portafolio
+                </h2>
+                <p 
+                  class="card__text"
+                  data-section="project"
+                  data-value="portfolio-description-short"
+                >
+                  Este es mi portafolio personal.
+                </p>
+                <p 
+                  class="card__text"
+                  data-section="project"
+                  data-value="portfolio-description-long"
+                >
+                  Realice una pagina web sobre mi, esta 
+                  pagina la realice con el fin de mostrar mis habilidades como 
+                  desarrollador y que las personas vieran los proyectos en los que estoy trabajando actualmente.
+                </p>
+                <div class="buttons">
+                  <a href="https://luiszambranos.github.io/portafolio/" target="_blank" 
+                  class="button button--primary">Demo</a>
+                  <a href="https://github.com/LuisZambranos/portafolio" target="_blank"
                   class="button button--ghost">Code</a>
                 </div>
               </div>
@@ -279,8 +347,18 @@
                   <span class="project__tag">#Android</span>
                 </div>
                 <h2 class="card__title">Kripton App</h2>
-                <p class="card__text">Coming Soon...</p>
-                <p class="card__text">Estoy diseñando una app mobile en android studio la 
+                <p 
+                  class="card__text"
+                  data-section="project"
+                  data-value="app-description-short"
+                >
+                  Proximamente...
+                <p 
+                  class="card__text"
+                  data-section="project"
+                  data-value="app-description-long"
+                >
+                  Estoy diseñando una app mobile en android studio la 
                   cual tiene como fin entregar dietas, rutinas, calcular imc, entre otras funciones</p>
                 <div class="buttons">
                   <a href="#" class="button button--primary">Demo</a>

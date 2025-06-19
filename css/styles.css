@@ -154,12 +154,29 @@ main{
     border-radius: var(--border-radius);
 }
 
+@media screen and (min-width: 720px){
+    .card__image-container{
+        height: 350px;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center;     /* Centra verticalmente */
+    }
+}
+
 .card__image-container{
     width: 100%;
     min-width: 320px;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
+
+.card__image-container-small{
+    width: 100%;
+    min-width: 320px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
 
 .card__header{
     padding: 1em 0;
@@ -379,14 +396,13 @@ main{
 
 .img-small {
     width: 100%;        /* o el porcentaje que desees */
-    max-width: 270px;  /* puedes ajustar esto también */
+    max-width: 270px;
     display: block;
     border-radius: var(--border-radius); /* opcional: para que se vea uniforme */
 }
 
 .card__image {
   width: 100%;
-  height: auto;
   border-radius: var(--border-radius);
 }
 
