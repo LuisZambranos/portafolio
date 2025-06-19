@@ -155,6 +155,7 @@ main{
 }
 
 .card__image-container{
+    width: 100%;
     min-width: 320px;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -185,10 +186,10 @@ main{
 
 @media screen  and (min-width: 760px){
     .card--project{
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-column: 1 / -1;
-}
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column: 1 / -1;
+    }
 }
 
 
@@ -382,6 +383,21 @@ main{
     display: block;
     border-radius: var(--border-radius); /* opcional: para que se vea uniforme */
 }
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+
+/*
+.img-medium {
+    width: 100%;        
+    max-width: 500px;  
+    display: block;
+    border-radius: var(--border-radius);
+}*/
 
 .custom-scroll-top {
     position: fixed;
