@@ -147,3 +147,53 @@ const updateSlidePosition = () => {
   const slideWidth = slides[0].getBoundingClientRect().width;
   track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
 };
+
+// MODAL
+
+  const openBtn = document.getElementById("openModalBtn");
+  const closeBtn = document.getElementById("closeModalBtn");
+  const modal = document.getElementById("certificatesModal");
+
+  openBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+// LIGHTBOX
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  // Agrega evento a cada imagen del modal
+  document.querySelectorAll('.modal__img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  // Cerrar con botón
+  lightboxClose.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+  });
+
+  // Cerrar haciendo clic fuera de la imagen
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  });
+

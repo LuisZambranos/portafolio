@@ -410,10 +410,35 @@
                   Estos certificados son los que obtenido durante mis estudios y que me han sido útiles en mi desarrollo profesional. Siempre estoy en busca de mejorar mis conocimientos y habilidades.
                 </p>
                 <div class="buttons">
-                  <a href="#" class="button button--primary">Ver Todos</a>
-                  <!--<a href="#" class="button button--ghost">Code</a> -->
+                  <!-- Botón que abre el modal -->
+                  <a href="#" class="button button--primary" id="openModalBtn">Ver todos</a>
                 </div>
               </div>
+
+              <!-- Modal -->
+              <div class="modal" id="certificatesModal">
+                <div class="modal__content">
+                  <button class="modal__close" id="closeModalBtn">&times;</button>
+                  <h2 class="modal__title">Todos los Certificados</h2>
+                  <div class="modal__grid">
+                    <!-- Certificados dentro del grid -->
+                    <img src="assets/certificates/CrecimientoDigital.png" alt="Certificado 1" class="modal__img" />
+                    <img src="assets/certificates/Diseño-GestionAgilProyectos.png" alt="Certificado 2" class="modal__img" />
+                    <img src="assets/certificates/Diseño-ProgramacionWeb.png" alt="Certificado 3" class="modal__img" />
+                    <img src="assets/certificates/FundamentosProgramacion-DiseñoWeb.png" alt="Certificado 4" class="modal__img" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lightbox para certificado ampliado -->
+              <div class="lightbox" id="lightbox">
+                <div class="lightbox__content">
+                  <button class="lightbox__close" id="lightboxClose">&times;</button>
+                  <img src="" alt="Certificado ampliado" class="lightbox__img" id="lightboxImg" />
+                </div>
+              </div>
+
+
             </article>
 
 

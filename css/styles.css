@@ -603,3 +603,116 @@ main{
     height: auto;
   }
 }
+
+/* MODAL */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.modal__content {
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+  padding: 2em;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.modal__close:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 1em;
+  color: var(--primary-color);
+}
+
+.modal__grid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.modal__img {
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox__img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #000; /* color por defecto */
+}
+
+.lightbox__close:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
